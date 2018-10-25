@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>CSS</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	.menu{
+		background: #7fd05f;
+		width: 100%;
+		height: 50px;
+	}
+	.item{
+		float: left;
+		text-decoration: none;
+		line-height: 50px;
+		list-style: none;
+
+	}
+	.item a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.item a:hover{
+		text-decoration: underline;
+	}
+	.search{
+		margin-right: 10%;
+		float: right;
+		text-decoration: none;
+		list-style: none;
+		line-height: 50px;
+	}
+	.item .item-hider{
+		text-align: left;
+		text-decoration: none;
+		background: #7fd09f;
+		display: none;
+		list-style: none;
+		width: 180px;
+		
+	}
+	
+	.item:hover .item-hider {
+		display: block;
+
+	}
+	.item .item-hider1{
+		text-align: left;
+		text-decoration: none;
+		background: #7fd09f;
+		display: none;
+		list-style: none;
+		width: 100px;
+		position: absolute;
+		left: 357px;
+	}
+	.item:hover .item-hider1{
+		display: block;
+	}
+
+</style>
+</head>
+<body background="">
+	<nav> 
+		<ul class="menu">
+			<li class="item"><img width="75px" height="37px" src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png?1" class="initial loading" data-was-processed="true"></li>
+			<li class="item"><a href=""><img src="https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif" alt=""> Xem danh m?c |</a></li>
+			<li class="item" ><a href="">Tin t?c qu?c t? |</a></a></li>
+			<li class ="item"><a href="">Hi-tech |</a>
+				<ul class="item-hider1">
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>D? s?p ra ḷ</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Tin t?c công ngh?</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>M? n? và công ngh?</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Laptop giá r?</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Đi?n tho?i</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Đi?n tho?i</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Đi?n tho?i</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Đi?n tho?i</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Máy tính</a></li>
+
+				</ul>
+			</li>
+			<li class="item"><a href="">Showbiz |</a></li>
+			<li class="item"><a href="">Gi?i trí |</a></li>
+			<li class="item"><a href="">S?ng tr? |</a></li>
+			<li class="item"><a href="">Th? thao |</a></li>
+			<li class="item"><a href="">S?c kh?e |</a></li>
+			<li class="item"><a href="">Video |</a></li>
+			<li class="item"><a href="">Phái d?p |</a></li>
+			<li class="item"><a href="">Game </a></li>
+			<li class="search"><img src="https://cdn.24h.com.vn/images/2014/icon_search.png" width="16px" height="16px" ></i></li>
+		</ul>
+	</nav> 
+</body>
+</html>

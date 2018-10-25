@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	#id1{ width: 100%;
+		height: 50px;
+		background: #B3EE3A;
+		padding-left: 0px;
+	}
+	.item{
+		position: relative;
+		float: left;
+		line-height: 50px;
+		list-style: none;
+		margin-left: 15px;
+	}
+	.item>a{
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	.subitem{
+		text-decoration: none;
+		list-style: none;
+	}
+	#id2{
+		position: absolute;
+		display: none;
+		background-color: #32CD32;
+		width: 200px;
+	}
+	.item:hover #id2{
+		display: block;
+	}
+	.subitem>a{
+		color: #FFFFFF;
+	}
+	.search{
+		margin-right: 10%;
+		float: right;
+		text-decoration: none;
+		list-style: none;
+		line-height: 50px;
+	}
+	#id3{
+		position: absolute;
+		display: none;
+		background-color: #32CD32;
+		width: 200px;
+		
+	}
+	.item:hover #id3{
+		display: block;
+	}
+	#id4{
+		position: absolute;
+		display: none;
+		background-color: #32CD32;
+		width: 200px;
+	}
+	#id4 .subitem1{
+		
+		list-style: none;
+
+	}
+	.subitem1>a{
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.subitem>a{
+		text-decoration: none;
+	}
+	i{
+		color: #FFFFFF;
+	}
+	.subitem3>a{
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	.subitem3{
+		list-style: none;
+	}
+	.subitem3:hover #id4{
+		display: block;
+		margin-left: 200px;
+
+	}
+</style>
+</head>
+<body>
+	<ul id="id1">
+		<li class="item"><img width="75px" height="40px" src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png?1" class="initial loading" data-was-processed="true"></li>
+		<li class="item"><a href="#"><img src="https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif" alt="">Xem danh mục</a>
+			<ul id="id3">
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Trang chủ 24h</a></li>
+				<li class="subitem3"><a href=""><i class="fas fa-arrow-right"></i>Tin tức trong ngày</a>
+					<ul id="id4">
+						<li class="subitem1"><a href="">Tin Hà Nội</a></li>
+						<li class="subitem1"><a href="">Tin TP Hồ Chí Minh</a></li>
+						<li class="subitem1"><a href="">Tin Đà Nẵng</a></li>
+						<li class="subitem1"><a href="">Tai nạn giao thông</a></li>
+						<li class="subitem1"><a href="">Tin Cần Thơ</a></li>
+						<li class="subitem1"><a href="">Tin thời tiết</a></li>
+						<li class="subitem1"><a href="">Dự báo thời tiết</a></li>
+					</ul>
+
+				</li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Bóng đá</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Thế giới</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Thời trang</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>An ninh xã hội</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Thời trang Hi tech</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Tài chính bất động sản</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Ẩm thực</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Làm đẹp</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Cuộc sống showbiz</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Giải trí</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Bạn trẻ-Cuộc sống</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Giáo dục-du học</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Thể thao</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Phi thường-kỳ quặc</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Công nghệ thông tin</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Oto-xe máy</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Thị trường</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Tiêu dùng</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Du lịch</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>Sức khỏe đời sống</a></li>
+				<li class="subitem"><a href=""><i class="fas fa-arrow-right"></i>video tổng hợp</a></li>
+			</ul>
+
+		</li>
+		<li class="item"><a href="#">Tin tức quốc tế |</a></li>
+		<li class="item"><a href="#">Hi-tech |</a>
+			<ul id="id2">
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Dế sắp ra lò</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Tin tức công nghệ</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Mỹ nữ và công nghệ</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Laptop giá rẻ</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Dế giá rẻ</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Diện thoại</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Máy tính xách tay</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Máy nghe nhạc</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Máy ảnh và Camera số</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Các sản phẩm khác</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Thế giới công nghệ</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Máy tính bảng</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Đánh giá sản phẩm</a></li>
+				<li class="subitem"><a href="#"><i class="fas fa-arrow-right"></i>Điện tử gia dụng</a></li>
+
+			</ul>
+		</li>
+		<li class="item"><a href="#"> Showbiz |</a></li>
+		<li class="item"><a href="#">Giải trí |</a></li>
+		<li class="item"><a href="#">Sống trẻ |</a></li>
+		<li class="item"><a href="#">Thể thao |</a></li>
+		<li class="item"><a href="#">Sức khỏe |</a></li>
+		<li class="item"><a href="#">Video |</a></li>
+		<li class="item"><a href="#">Phái đẹp |</a></li>
+		<li class="item"><a href="#">Game |</a></li>
+		<li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
+	</ul>
+	
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#item1{
+			width: 50%;
+			height: 50px;
+			background: grey;
+		}
+		.li{
+			float: left;
+			margin-left: 25px;
+			line-height: 50px;
+			list-style: none;
+			position: relative;
+		}
+		.li>a{
+			margin: 2px;
+			color: white;
+			text-decoration: none;
+		}
+		.li:hover{
+			background: red;
+		}
+		#item3{
+			position: absolute;
+			background: #E6E6E6;
+			padding-left:10px;
+			width: 100px;
+		}
+		.li1{
+			list-style: none;
+			display: none;
+			background: #E6E6E6;
+			width: 50px
+		}
+		.li:hover .li1{
+			display: inline-block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="item1">
+		<div id="item2">
+			<ul class="ul">
+				<li class="li"><a href="#">Home</a></li>
+				<li class="li"><a href="#">News</a></li>
+				<li class="li"><a href="#">Dropdown</a>
+					<ul id="item3">
+						<li class="li1">Link 1</li>
+						<li class="li1">Link 2</li>
+						<li class="li1">Link 3</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

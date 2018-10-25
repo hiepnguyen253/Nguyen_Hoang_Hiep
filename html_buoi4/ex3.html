@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style>
+		div{
+			width: 100%;
+			height: 50px;
+			background: pink;
+		
+
+		}
+		.item{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			color: green;
+			line-height: 50px;
+			margin-left:15px; 
+		}
+		.item a{
+			text-decoration: none;
+		}
+		
+		.subitem{
+			list-style: none;
+		}	
+		.item> a:hover{
+			background: green;
+		}
+		#submenu{
+			display: none;
+			position: absolute;
+			background-color: pink;
+
+		}
+
+		.item:hover #submenu{
+			display: block;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div>
+	<ul >
+		<li class="item"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+		<li class="item" ><a href="#">Course</a>
+			<ul id="submenu">
+				<li class="subitem"><a href="#">Java</a></li>
+				<li class="subitem"><a href="#">CSS</a></li>
+				<li class="subitem"><a href="#">HTML</a></li>
+
+			</ul>
+
+		</li>
+		<li class="item"><a href="#">About</a></li>
+		<li class="item"><a href="#">Contact</a></li>
+	</ul>
+	</div>
+	
+</body>
+</html>
