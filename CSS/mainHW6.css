@@ -1,0 +1,205 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#main{
+	width: 100%;
+	height: auto;
+}
+#head{
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: auto;
+}
+.head1{
+	display: inline-block;
+	margin-left: 20px;
+}
+#head>ul{
+	text-align: center;
+}
+.head1>a{
+	text-decoration: none;
+	color: grey;
+}
+#content{
+	width: 80%;
+	height: auto;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.ct>h1{
+	font-size: 40px;
+	color: #04B4AE;
+	text-align: center;
+}
+.ct>p{
+	text-align: center;
+}
+.ct{
+	width: 100%;
+	background: #F2F2F2;
+}
+.ct>.ct1{
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px
+
+}
+.ct1>img{
+	width: 100%;
+}
+#content1{
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: auto;
+}
+.ct1-ab{
+	float: left;
+	padding-top: 20px;
+	padding-left: 60px;
+}
+.clear{
+	clear: both;
+}
+.ct1-ab h3{
+	color: blue;
+}
+.ct1-ab i{
+	padding-top: 20px;
+	padding-left: 10px;
+	color: blue;
+}
+#fooster{
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: auto;
+	margin-top: 50px; 
+}
+.fooster1{
+	width: 100%
+	padding-top: 50px;
+	background:#04B4AE;
+}
+.fooster1> p{
+	color: white;
+}
+.fooster2>h3{
+	color: white;
+}
+.fooster2>p{
+	color: white;
+}
+.fooster2{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+.fooster3>input{
+	width: 80%;
+}
+.fooster3>p{
+	color: white;
+}
+.fooster3{
+	padding-left: 30px;
+
+}
+.fooster3>textarea{
+	width: 80%;
+}
+@media(max-width: 960px){
+#main{
+	width: 100%;
+	height: auto;
+}
+#head{
+	width: 80%;
+	height: auto;
+}
+#content{
+	width: 80%;
+	height: auto;
+}
+.ct{
+	width: 100%;
+	height: auto;
+}
+.ct>.ct1{
+	width: 25%;
+	display: inline-block;
+	padding-left: 40px;
+}
+.ct1>img{
+	width: 100%;
+}
+.ct1-ab{
+	float: left;
+	width: 40%;
+}
+@media(max-width: 700px){
+#main{
+	width: 100%;
+	height: auto;
+}
+#head{
+	width: 80%;
+	height: auto;
+}
+#content{
+	width: 80%;
+	height: auto;
+}
+.ct{
+	width: 100%;
+	height: auto;
+}
+.ct>.ct1{
+	width: 40%;
+	float: left;
+}
+.ct1>img{
+	width: 100%;
+}
+.ct1>p{
+	text-align: justify;
+}
+}
+@media(max-width: 460px){
+	#main{
+	width: 100%;
+	height: auto;
+}
+#head{
+	width: 80%;
+	height: auto;
+}
+#content{
+	width: 80%;
+	height: auto;
+}
+.ct{
+	width: 100%;
+	height: auto;
+}
+.ct>.ct1{
+	width: 80%;
+	display: block;
+}
+.ct1{
+	width: 100%;
+}
+.head1{
+	width: 13%
+}
+
+
+
+
