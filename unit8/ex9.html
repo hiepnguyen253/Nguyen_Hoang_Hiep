@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="input" name="">
+	<button onclick="add()" type="button">Add</button>
+	<div id="content"></div>
+	<script type="text/javascript">
+		function add(){
+			var input = document.getElementById('input')
+			var text = document.getElementById('content')
+			var a = input.value
+			text.innerHTML = a;
+			input.value='';
+		}
+	</script>
+	
+</body>
+</html>

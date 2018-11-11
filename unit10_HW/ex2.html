@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex2</title>
+	<style type="text/css">
+		body{
+			background-image: url(./images/Sky.jpg)
+		}
+		#head{
+			border :1px solid black;
+			width: 50%;
+			height: auto;
+			margin-left: 30%;
+			margin-top: 200px;
+			position: relative;
+			border-radius: 5px;
+		}
+		.gt{
+			display: block;
+		}
+		input{
+			width: auto;
+		}
+		#fooster{
+			margin-top: 10px;
+			margin-left: 500px;
+		}
+		.but2{
+			margin-left: 300px;
+		}
+		.but{
+			background: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="head">
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" id="name"></td>
+				<td><span class="error" id="errorName"></span></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td class="gt"><input type="radio" name="A" class="rd">Nam</td>
+				<td class="gt"><input type="radio" name="A" class="rd">Nữ</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" id="email"></td>
+				<td><span class="error" id="errorEmail"></span></td>
+			</tr>
+			<tr>
+				<td>Số điện thoại</td>
+				<td><input type="number" id="mobile"></td>
+				<td><span class="error" id="errorMobile"></span></td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td><input type="password" id="password"></td>
+				<td><span class="error" id="errorPassword"></span></td>
+			</tr>
+			<tr>
+				<td>Xác nhân lại mật khẩu</td>
+				<td><input type="password" id="password1"></td>
+				<td><span class="error" id="errorPassword1"></span></td>
+			</tr>
+		</table>
+	</div>
+	<div id="fooster">
+		<button class="but but1" id="but1" >Đăng ký</button>
+		<button class="but but2">Xóa trắng</button>
+	</div>
+	<script type="text/javascript">
+			function checkPhoneNumber() {
+		    var flag = false;
+		    var phone = $('#input').val().trim(); // ID của trường Số điện thoại
+		    phone = phone.replace('(+84)', '0');
+		    phone = phone.replace('+84', '0');
+		    phone = phone.replace('0084', '0');
+		    phone = phone.replace(/ /g, '');
+		    if (phone != '') {
+		        var firstNumber = phone.substring(0, 2);
+		        if ((firstNumber == '09' || firstNumber == '08') && phone.length == 10) {
+		            if (phone.match(/^\d{10}/)) {
+		                flag = true;
+		            }
+		        } else if (firstNumber == '01' && phone.length == 11) {
+		            if (phone.match(/^\d{11}/)) {
+		                flag = true;
+		            }
+		        }
+		    }
+		    return flag;
+		}
+
+
+
+		function validateEmail(email) {
+		    var re = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
+		    return re.test(String(email).toLowerCase());
+		}
+
+
+
+		document.getElementById('but1').addEventListener('click',function(e){
+			e.preventDefault();
+			var name = document.getElementById('name')
+			var email = document.getElementById('email')
+			var sdt = document.getElementById('mobile')
+			var password = document.getElementById('password')
+			var password1 = document.getElementById('password1')
+			if(name.value.trim()==''){
+				document.getElementById('errorName').innerHTML='Mời bạn nhập lại name';
+			}
+			else if(name.value.length < 8){
+				document.getElementById('name').innerHTML='name cần ít nhất 8 ký tự';
+			}
+			else{
+				document.getElementById('errorName').innerHTML='';
+			}
+
+			if(email.value.trim()==''){
+				document.getElementById('errorEmail').innerHTML='Mời bạn nhập lại email';
+			} else if(!validateEmail(email.value)){
+				document.getElementById('errorEmail').innerHTML='Email is valid';
+			} else{
+				document.getElementById('errorEmail').innerHTML=''
+			}
+
+			if(password.value.trim()==''){
+				document.getElementById('errorPassword').innerHTML='Mời bạn nhập lại Password';
+			} else{
+				document.getElementById('errorPassword').innerHTML='';
+			}
+
+			if(sdt.value.trim()==''){
+				document.getElementById('errorMobile').innerHTML='Mời bạn nhập lại sdt';
+			} else if(!checkPhoneNumber(sdt.value)){
+				document.getElementById('errorMobile').innerHTML='SDT is valid';
+			} else{
+				document.getElementById('errorMobile').innerHTML='';
+			}
+
+
+			if(password1.value.trim()==password){
+				document.getElementById('errorPassword1').innerHTML='';
+			} else{
+				document.getElementById('errorPassword1').innerHTML='Bạn phải nhập giống mật khẩu'
+			}
+		});
+	</script>
+	
+</body>
+</html>

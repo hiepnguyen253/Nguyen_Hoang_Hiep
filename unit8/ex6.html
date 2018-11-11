@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="clickMe()">aaa</button>
+	<h1 id="name">Hoang Hiep</h1>
+	<p class="item">Lorem ipsum dolor sit amet.</p>
+	<p class="item">Lorem ipsum dolor sit amet.</p>
+
+	<script type="text/javascript">
+		function clickMe(){
+			document.getElementById('name').style.color ='red';
+			document.getElementById('name').innerHTML = 'Hoang Hiep Hiep'
+			
+			
+			var a = document.getElementsByTagName('p');
+			for (var i = a.length - 1; i >= 0; i--) {
+				a[i].style.color="green";
+			}
+		
+		
+		}
+	</script>
+</body>
+</html>

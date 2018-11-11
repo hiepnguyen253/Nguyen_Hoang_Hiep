@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#tab{
+			background: #01A9DB;
+			width: 30%;
+			height: auto;
+		}
+		.dong:hover{
+			background-color: green;
+
+		}
+		td{
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<table id="tab">
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+		<tr class="dong">
+			<td>
+				<input type="checkbox" class="check">
+			</td>
+			<td>
+				Lorem ipsum dolor sit amet.
+			</td>
+		</tr>
+	</table>
+	<button onclick="checkall()"> Check all</button>
+	<button onclick="uncheck()"> Uncheck all</button>
+	<script type="text/javascript">
+	function checkall(){
+		var ck = document.getElementsByClassName("check");
+		for (var i = 0; i >= 0; i++) {
+			ck[i].checked = true;
+		}
+}
+	function uncheck(){
+		var ck = document.getElementsByClassName("check");
+		for (var i = 0; i >= 0; i++) {
+			ck[i].checked = false;
+		}
+}
+</script>
+</body>
+</html>

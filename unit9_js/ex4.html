@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex4</title>
+</head>
+<body>
+	<div id="message">
+          Chào mừng các bạn đến với ZentGroup
+        </div>
+        <input type="button" value="Change backgroud" onclick="change_background()"/>
+        <input type="button" value="Change color" onclick="change_color()"/>
+        <input type="button" value="Change height" onclick="change_height()"/>
+        <input type="button" value="Change fontsize" onclick="change_font_size()"/>
+	<script type="text/javascript">
+		function change_background(){
+			document.getElementById('message').style.background="red";
+		}
+		function change_color(){
+			document.getElementById('message').style.color="blue";
+
+		}
+		function change_height(){
+			document.getElementById('message').style.height="400px";
+		}
+		function change_font_size(){
+			document.getElementById('message').style.fontSize="20px"
+		}
+	</script>
+
+</body>
+</html>

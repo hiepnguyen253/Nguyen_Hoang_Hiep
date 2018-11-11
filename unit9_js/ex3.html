@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" name="" id="input">
+	<p id="text" name="Hiep" age="22"></p>
+	<script type="text/javascript">
+		var selector = document.getElementById('text')
+	selector.innerHTML = 'name: ' + selector.getAttribute('name') + ' age: ' + selector.getAttribute('age')
+	var input =  document.getElementById('input')
+	input.value = 'name';
+	</script>
+</body>
+</html>

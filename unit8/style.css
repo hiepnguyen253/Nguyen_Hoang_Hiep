@@ -1,0 +1,257 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.hang{
+	margin: 0 -2px;
+	width: 100%;
+}
+.cot-8>ul{
+	margin: 0 -2px;
+	padding: 15px;
+}
+.cot-8>ul>li{
+	list-style: none;
+}
+.cot-8>ul>li>a{
+	padding-left: 15px;
+	text-decoration: none;
+	color: black;
+
+}
+.img{
+	width: 100%;
+}
+#hang1{
+	height: 70px;
+}
+#hang1>div{
+	text-align: center;
+}
+.sub-top{
+	text-align: center;
+	font-weight: 900;
+	font-size: 30px;
+}
+.sub-down{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+#hang2{
+	height: 50px;
+	padding-top: 50px;
+}
+#hang2>div{
+	text-align: center;
+	padding-top: 10px;
+
+}
+#hang3{
+	height: 50px;
+}
+#hang3>div{
+	text-align: center;
+	padding-top: 10px;
+}
+.mau1{
+	background: red;
+}
+.mau2{
+	background: yellow;
+}
+.mau3{
+	background: green;
+}
+.mau4{
+	background: blue;
+}
+/*thay tat ca inline flix thang margin 0 -2px;
+resposive*/
+@media only screen and (min-width: 601px) and (max-width: 980px){
+.cot-lb-1{
+	width: calc(100% / 12);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-2{
+	width: calc(100% / 12 * 2);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-3{
+	width: calc(100% / 12 * 3);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-4{
+	width: calc(100% / 12 * 4);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-5{
+	width: calc(100% / 12 * 5);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-6{
+	width: calc(100% / 12 * 6);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-7{
+	width: calc(100% / 12 * 7);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-8{
+	width: calc(100% / 12 * 8);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-9{
+	width: calc(100% / 12 * 9);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-10{
+	width: calc(100% / 12 * 10);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-11{
+	width: calc(100% / 12 * 11);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-lb-12{
+	width: 100%;
+	display: inline-block;
+	margin: 0 -2px;
+}
+}
+@media only screen and (max-width: 600px){
+.cot-mb-1{
+	width: calc(100% / 12);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-2{
+	width: calc(100% / 12 * 2);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-3{
+	width: calc(100% / 12 * 3);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-4{
+	width: calc(100% / 12 * 4);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-5{
+	width: calc(100% / 12 * 5);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-6{
+	width: calc(100% / 12 * 6);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-7{
+	width: calc(100% / 12 * 7);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-8{
+	width: calc(100% / 12 * 8);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-9{
+	width: calc(100% / 12 * 9);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-10{
+	width: calc(100% / 12 * 10);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-11{
+	width: calc(100% / 12 * 11);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-mb-12{
+	width: 100%;
+	display: inline-block;
+	margin: 0 -2px;
+}
+}
+@media screen and (min-width: 981px) {
+	
+.cot-1{
+	width: calc(100% / 12);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-2{
+	width: calc(100% / 12 * 2);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-3{
+	width: calc(100% / 12 * 3);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-4{
+	width: calc(100% / 12 * 4);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-5{
+	width: calc(100% / 12 * 5);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-6{
+	width: calc(100% / 12 * 6);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-7{
+	width: calc(100% / 12 * 7);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-8{
+	width: calc(100% / 12 * 8);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-9{
+	width: calc(100% / 12 * 9);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-10{
+	width: calc(100% / 12 * 10);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-11{
+	width: calc(100% / 12 * 11);
+	display: inline-block;
+	margin: 0 -2px;
+}
+.cot-12{
+	width: 100%;
+	display: inline-block;
+	margin: 0 -2px;
+}
+}

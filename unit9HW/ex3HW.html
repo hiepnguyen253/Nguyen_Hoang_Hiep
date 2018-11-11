@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#khung{
+			background-color: grey;
+			width: 70%;
+			height: auto;
+			padding:20px;
+		}
+		.item{
+			padding-top: 20px;
+		}
+		.text{
+			background-color: white !important;
+			display: block !important ;
+		}
+		.ct{
+			display: none;
+			padding-left: 20px;
+			padding-bottom: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="khung">
+		<div class="item">
+			<input type="button" value="Tab1" onclick="tab(1)" class="tab " id="tab-1" />
+			<input type="button" value="Tab2" onclick="tab(2)" class="tab " id="tab-2" />
+			<input type="button" value="Tab3" onclick="tab(3)" class="tab " id="tab-3"/>
+		</div>
+		<div>
+			<div class="ct text" id="text-1">
+				<h3>Section 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque qui, animi ex distinctio rem architecto perspiciatis laboriosam neque, sequi voluptatem quae numquam quaerat nulla fugiat saepe quis sapiente culpa cupiditate, deleniti consequuntur adipisci. Eius minus voluptas tenetur quisquam voluptatem eaque pariatur, laborum asperiores commodi sapiente ea ullam, suscipit alias officia.</p>
+		</div>
+		<div class="ct " id="text-2">
+				<h3>Section 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque molestias doloribus est, unde. Et illo maiores placeat. Ducimus dicta nesciunt voluptatem! Voluptatem dolorem pariatur repudiandae, earum consequatur libero. Accusantium recusandae sit, inventore ut quibusdam architecto nam odio ex magni quae.</p>
+		</div>
+		<div class="ct " id="text-3">
+				<h3>Section 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium incidunt nulla dignissimos distinctio explicabo sapiente laboriosam quidem voluptatum saepe reiciendis odit atque quibusdam necessitatibus, totam voluptatibus omnis, vero, libero ratione.</p>
+		</div>
+		</div>
+	</div>
+	<script>
+	function tab(number){
+		var btn = document.getElementsByClassName('tab')[0];
+		btn.classList.remove('tab');
+		document.getElementById('tab-'+number).classList.add('tab') 
+		btn = document.getElementsByClassName('text')[0];
+		btn.classList.remove('text');
+		document.getElementById('text-'+number).classList.add('text') 
+
+	}
+</script>
+</body>
+</html>

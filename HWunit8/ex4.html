@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var m = prompt('Mời bạn nhập vào 1 số m','Mời bạn nhập vào đây số m...')
+		do{
+			var n = prompt('Mời bạn nhập vào 1 số n','Mời bạn nhập vào đây số n...')
+		}while(m<=n)
+		var k = prompt('Mời bạn nhập vào 1 số k','Mời bạn nhập vào đây số k...')
+		var s = 0;
+		for (var i = n; i <= m; i++) {
+			if(i%k==0){
+				s = s + i;
+
+			}
+		}
+		document.write('Tổng của các số trong khoảng từ '+ n + ' đến ' + m + ' là: '+s)
+	</script>
+</body>
+</html>

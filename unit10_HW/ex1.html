@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex1</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		#head{
+			width: 600px;
+			height: 300px;
+			position: relative;
+
+		}
+		.slide{
+			width: 600px;
+			height: 300px;
+			margin-left: 400px;
+		}
+		.slide1{
+			display: none;
+		}
+		.but{
+			position: absolute;
+			right: 0px;
+			top: 150px;
+			left: 400px;
+		}
+		.but1{
+			position: absolute;
+			right: 0px;
+			left: 989px;
+			top:150px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="head">
+		<img class="slide" stt=1 src="./images/1.jpg" alt="">
+		<img class="slide slide1" stt=2 src="./images/2.jpg" alt="">
+		<img class="slide slide1" stt=3 src="./images/3.jpg" alt="">
+		<button id="prev" class="but">&#10094</button>
+		<button id="next" class="but1">&#10095</button>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var stt =0;
+			$("img.slide").each(function(){
+				if($(this).is(':visible'))
+					stt = $(this).attr("stt");
+			});
+			$("#next").click(function(){
+				next=++stt;
+				$('img.slide').hide();
+				$('img.slide').eq(next).show();
+			})
+		});
+		
+	</script>
+</body>
+</html>

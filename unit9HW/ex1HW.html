@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#khung{
+			border: 1px solid black;
+			width:200px;
+			height: auto;
+			
+		}
+		#text{
+			margin-top: 20px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="khung">
+		<p>Cỡ chữ</p>
+	
+			<input type="button" value="Mặc định" class="inputt" onclick="MD()"/>
+			<input type="button" value="Tăng" class="inputt" onclick="Tang()"/>
+			<input type="button" value="giảm" class="inputt" onclick="Giam()"/>
+	</div>
+	<div id="text" >
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique hic ullam, cumque voluptatem, accusamus in explicabo. Asperiores <br> qui eveniet recusandae sit perferendis, provident unde. Praesentium molestiae nesciunt recusandae eveniet <br> explicabo tenetur autem quae vitae in voluptas commodi, iste cumque, perspiciatis! Iste neque, officia ipsam nesciunt earum maxime iusto ullam tenetur.
+	</div>
+	<script type="text/javascript">
+
+		function Tang(){
+			var fs= document.getElementById('text').style.fontSize;
+			var s = parseInt(fs.split('px')[0]) + 0.4 * (fs.split('px')[0])
+			document.getElementById('text').style.fontSize = s +'px'
+		}
+		function MD(){
+			document.getElementById('text').style.fontSize="20px";
+		}
+		function Giam(){
+			var fs= document.getElementById('text').style.fontSize;
+			var s = parseInt(fs.split('px')[0]) - 0.4 * (fs.split('px')[0])
+			document.getElementById('text').style.fontSize = s + 'px'
+		}
+
+	</script>
+</body>
+</html>
