@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex4</title>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#input').on('click',function(){
+			// $('#section').children().eq(1).css('color','blue')
+			$('#section').children().filter('.choose').css('color','red')
+
+		})
+		})
+
+
+	</script>
+</head>
+<body>
+	<input id="input" type="button" name="" value="click">
+	<div >
+		<p>the p</p>
+		<span>the span</span>
+		<ul id="section">
+			<li>the l1</li>
+			<li>the l2</li>
+			<li class="choose">the l3</li>
+			<li>the l4</li>
+			<li>the l5</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

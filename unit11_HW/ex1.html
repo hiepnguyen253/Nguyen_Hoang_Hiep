@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex1</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		#content{
+			background: #FE2E2E;
+			width: 50%;
+			height: 100px;
+			margin-left: 300px;
+
+		}
+		#item{
+			padding-top: 37px;
+		}
+		input{
+			width: 400px;
+			height: 30px;
+			margin-left: 30px;
+		}
+		button{
+			width: 200px;
+			height: 34px;
+		}
+		h2{
+			text-align: center;
+			color: white;
+		}
+		#tab{
+			width: 100%;
+			background: #FAFAFA;
+		}
+		table td.check{
+			width: 10%;
+		}
+		table td.ip{
+			width: 80%;
+		}
+		table td.del{
+			width: 10%;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+	<div id="content">
+		<div id="item">
+		<h2 >My To Do List</h2>
+		<input type="text" name="" id="input">
+		<button id="add">Add</button>
+		</div>
+
+		
+		<table id="tab">
+			
+		</table>
+		
+	</div>
+
+
+
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(function(){
+
+			// click vao ô add
+
+			$('#add').click(function(){
+				var input = $('#input').val();
+				var html = `<tr id='tr1'>
+								<td class='check'></td>
+								<td class='ip'> `+input+`</td>
+								<td>
+									<a class='del'><i class="fas fa-times" ></i></a>
+								</td>
+							</tr>`
+				if (input=='') {
+					alert('Bạn phải nhập thông tin vào ô nhập')
+				}else{
+					$('#input').val('');
+					$('#tab').append(html);
+			}
+			})
+			// su kien click vao o noi dung cong viec
+			$('#tab').on('click','.ip',function() {
+				var index = $(this);
+				if (index.prev().html() == '') {
+					index.css('text-decoration','line-through');
+					index.prev().html('<i class="fas fa-check"></i>');
+					$(index).parent().css('background','#E6E6E6');
+				} else {
+					index.css('text-decoration','none');
+					index.prev().html('');
+					$(index).parent().css('background','#FAFAFA');
+				}
+		
+			})
+
+			// bat su kien vao o check
+			$('#tab').on('click','.check',function() {
+				var index = $(this);
+				if (index.html() == '') {
+					index.next().css('text-decoration','line-through');
+					index.html('<i class="fas fa-check"></i>');
+					$(index).parent().css('background','#E6E6E6');
+				} else {
+					index.next().css('text-decoration','none');
+					index.html('');
+					$(index).parent().css('background','#FAFAFA');
+				}
+				
+			})
+
+			$('#tab').on('click','.del',function() { 
+				var index = $(this);
+				$(index).parent().parent().remove();
+			})
+
+
+		})
+
+
+	</script>
+	
+</body>
+</html>

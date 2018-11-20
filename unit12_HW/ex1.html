@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex1</title>
+	<link rel="stylesheet" href="css/ex1.css">
+	
+</head>
+<body>
+	<div id="head">
+		<button class="item">Account</button>
+		<button class="item">Profile</button>
+		<button class="item">Warning</button>
+		<button class="item">Finish</button>
+	</div>
+	<div id="content">
+		<div class="content_1 ib1 active" id="ib1" onkeyup="checkTab1()">
+				<h2>Account Information</h2>
+				<hr width="100%">
+			<form action="#">
+				<p>User name*</p>
+				<input id="name" type="text">
+				<span class="error" id="errorNameTab1"> </span>
+				<p>Password</p>
+				<input id="pass" type="Password">
+				<span class="error" id="errorPasswordTab1"> </span>
+				<p>Confirm password</p>
+				<input id="pass_1" type="Password">
+				<span class="error" id="errorREPasswordTab1"> </span>
+				<p>(*) Mandatory</p>
+			</form>
+		</div>
+		<div class="content_1 ib2" id="ib2" onkeyup="checkTab2()">
+			<h2>Profile Information</h2>
+			<hr width="100%">
+			<form action="#">
+				<p>First name *</p>
+				<input id="firstName" type="text">
+				<span class="error" id="errorfirst"> </span>
+				<p>Last name</p>
+				<input id="lastName" type="text">
+				<span class="error" id="errorlast"> </span>
+				<p>Email</p>
+				<input id="email" type="Email">
+				<span class="error" id="errorEmail"> </span>
+				<p>Address</p>
+				<input type="text">
+				<span class="error" id="erroradd"> </span>
+				<p>Age (The warning step will show up if age is less than 18) *</p>
+				<input id="age" type="number">
+			</form>
+		</div>
+		<div class="content_1 ib3" id="ib3">
+			<h2>You are to young</h2>
+			<hr width="100%">
+			<p>Please go away ;-)</p>
+			
+		</div>
+
+
+		<div class="content_1 ib4" id="ib4">
+			<form action="#">
+					<span id="errCheckBox" class="error"></span>
+					<input id="check" type="checkbox">I agree with the Terms and Conditions.
+			</form>
+		</div>
+	</div>
+	<div class="lb">
+					<button class="previous">Previous</button>
+					<button class="next">next</button>
+	</div>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript" src="js/ex1.js"></script>
+	
+	
+</body>
+</html>

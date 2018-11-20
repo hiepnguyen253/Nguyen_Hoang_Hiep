@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex1</title>
+	<style type="text/css">
+		#section{
+			width: 50%;
+			background: black;
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#section').on("mouseenter",function(){
+				$('#section').css('background-color','yellow');
+				// $(this).css('background-color','yellow')
+			})
+			$('#section').on("mouseleave",function(){
+				$('#section').css('background-color','black');
+				// $(this).css('background-color','black')
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div id="section"></div>
+
+	
+</body>
+</html>

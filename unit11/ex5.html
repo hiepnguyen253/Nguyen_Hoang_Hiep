@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex5</title>
+</head>
+<body>
+	<input type="" name="" id="input">
+	<button id="add">Add</button>
+	<br>
+	<button id="toggle-check">toggle check</button>
+
+	<table>
+	
+		
+	</table>
+	
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		var j =1;
+		$(function(){
+			$('#add').click(function(){
+				var input = $('#input').val();
+				$('table').prepend(`<tr id=`+j+`>
+			<td>
+				<input class="checkbox" type="checkbox">
+			</td>
+			<td> `+input+`</td>
+			<td>
+				<button content=`+input+` class="edit">Edit</button>
+			</td>
+			<td>
+				<button class="del">delete</button>
+			</td>
+		</tr>`)
+				$('#input').val('')
+			})
+			$('body').on('click', '.del', function(){
+				$(this).parent().parent().remove();
+			})
+			$('#toggle-check').click(function(){
+				var checkbox = $('.checkbox');
+				for (var i = checkbox.length-1; i >=0; --i) {
+					checkbox[i].checked = !checkbox[i].checked;
+				    
+				}
+			})
+			$('body').on('click', '.edit', function(){
+				var content = $(this).attr('content')
+				$('#input').val(content)
+				$('#add').text('Update').attr('id', 'Update')
+			})
+
+
+
+		})
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 100%;
+	height: auto;
+}
+.item{
+	width: 23%;
+	background-color: #2E9AFE;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	border-radius: 5px;
+	color: white;
+	margin-left: 20px;
+}
+#content{
+	margin-top: 30px;
+    margin-left: 20px;
+    background: #E6E6E6;
+    margin-right: 20px;
+    height: 500px;
+
+}
+button{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 60px;
+	background: #2E9AFE;
+	color: white;
+}
+.content_1{
+	display: none;
+}
+span{
+	color: red;
+}
+.active{
+	display: block;
+}
+
+

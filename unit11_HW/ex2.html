@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style type="text/css">
+		#item{
+			width: 60%;
+			height: auto;
+			background: #E6E6E6;
+			margin-left: 18%;
+			margin-right: 18%;
+			margin-top: 100px;
+		}
+		body{
+			background-image: url(../unit10_HW/images/sky.jpg);
+
+		}
+		.content{
+			display: none;
+			height: 100px;
+			line-height: 20px;
+			color: gray;
+		}
+		.active{
+			padding: 10px;
+			display: block;
+			height: 100px;
+	</style>
+</head>
+<body>
+		<div id="item">
+
+			<div class="tab"><i class="fas fa-plus"></i></div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, dignissimos voluptates nam incidunt est impedit animi eum vel consectetur non nulla provident sunt, architecto deserunt.
+			</div>
+
+			<div class="tab"><i class="fas fa-plus"></i></div>
+			<div class="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quod cum neque a reprehenderit! Cum eaque eius nisi aspernatur sint, praesentium error ipsam maxime voluptatem iusto fugiat veritatis deserunt neque.</div>
+
+			<div class="tab"><i class="fas fa-plus"></i></div>
+			<div class="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sunt sed neque, quae, quis nisi ipsum asperiores architecto voluptatibus in animi dolorum nam? Harum, debitis necessitatibus ullam officia fugiat, illum in ex rerum eos illo, dolor? Blanditiis tempora repudiandae, laborum.</div>
+
+			<div class="tab"><i class="fas fa-plus"></i></div>
+			<div class="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolores delectus architecto necessitatibus magni praesentium quas, enim non dolore possimus nostrum, quisquam maiores molestias numquam veritatis consequatur porro libero, vero in ex at? Officiis esse eligendi exercitationem cum velit magni, similique enim assumenda, voluptate at! Commodi quo nostrum expedita ad.</div>
+		</div>
+	
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript" >
+		$(function(){
+
+			$('.tab').click(function(){
+
+				if ($(this).children().hasClass('fa-plus')) {
+					$(this).children().removeClass('fa-plus')
+					$(this).children().addClass('fa-minus')			
+					$(this).next().addClass('active')
+				}
+				else if($(this).children().hasClass('fa-minus')) {
+					$(this).children().addClass('fa-plus')
+					$(this).children().removeClass('fa-minus')
+					$(this).next().removeClass('active')
+				}
+			})
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex3</title>
+	<style type="text/css">
+		#section{
+			width: 50%;
+			background: black;
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		$('#show').on('click',function(){
+			$('#section').show(2000);
+		})
+
+		$('#hide').on('click',function(){
+			$('#section').hide(2000);
+		})
+		$('#toggle').on('click',function(){
+			$('#section').toggle(2000);
+		})
+
+
+
+		})
+	</script>
+</head>
+<body>
+		<div id="section">
+		
+		</div>
+		<button id="show">show</button>
+		<button id="hide">hide</button>
+		<button id="toggle">toggle</button>
+
+	
+</body>
+</html>

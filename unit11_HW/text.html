@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<style type="text/css">
+body{
+	background: url(http://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-full-hd-1080-mau-xanh-don-gian-va-dep_022856951.jpg);
+	font-family: arial;
+}
+.container h2{
+	color: #4267b2;
+}
+.wraper{
+	width:70%;
+	background: #fff;
+	margin: 100px auto;
+	padding-bottom: 50px;
+	border: 1px solid gray;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+.tab{
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	background: #f2f3f5;
+	border: 1px solid gray;
+	color: gray;
+}
+.content{
+	display: none;
+	height: 100px;
+	line-height: 20px;
+	border: 1px solid gray;
+	color: gray;
+}
+.active{
+	padding: 10px;
+	display: block;
+	height: 100px;
+	border: 1px solid gray;
+}
+.fa-minus{
+	    margin-left: -14px;
+	background:#4267b2;
+	color: #fff;
+
+}
+.fa-plus{
+	    margin-left: -14px;
+	background: #4267b2;
+	color: #fff;
+}
+
+</style>
+<body>
+	<div class="wraper">
+		<div class="container">
+			<h2> Content</h2>
+
+			<div class="tab"><button class="fas fa-plus"></button> Selection 1</div>
+			<div class="content" >
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, dignissimos voluptates nam incidunt est impedit animi eum vel consectetur non nulla provident sunt, architecto deserunt.
+			</div>
+
+			<div class="tab"><button class="fas fa-plus"></button> Selection 2</div>
+			<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, dignissimos voluptates nam incidunt est impedit animi eum vel consectetur non nulla provident sunt, architecto deserunt.
+			</div>
+
+			<div class="tab"><button class="fas fa-plus"></button> Selection 3</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, dignissimos voluptates nam incidunt est impedit animi eum vel consectetur non nulla provident sunt, architecto deserunt.
+			</div>
+
+			<div class="tab"><button class="fas fa-plus"></button> Selection 4</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, eligendi fugiat necessitatibus illo deleniti, dignissimos voluptates nam incidunt est impedit animi eum vel consectetur non nulla provident sunt, architecto deserunt.
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript" >
+		$(function(){
+
+			$('.tab').click(function(){
+
+				if ($(this).children().hasClass('fa-plus')) {
+					$(this).children().removeClass('fa-plus')
+					$(this).children().addClass('fa-minus')			
+					$(this).next().addClass('active')
+				}
+				else if($(this).children().hasClass('fa-minus')) {
+					$(this).children().addClass('fa-plus')
+					$(this).children().removeClass('fa-minus')
+					$(this).next().removeClass('active')
+				}
+			})
+
+		})
+	</script>
+</body>
+</html>

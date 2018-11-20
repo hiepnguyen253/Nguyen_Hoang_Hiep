@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex2</title>
+	<script type="text/javascript" src="../JS/jquery-3.3.1.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#size').on('change',function(){
+			var value = $(this).val();
+			if(value==16){
+				$('#price').text('Gia la 5.000.000 VND')
+			}
+			if(value==32){
+				$('#price').text('Gia la 6.000.000 VND')
+			}
+			if(value==64){
+				$('#price').text('Gia la 7.000.000 VND')
+			}
+		})
+	})
+
+	</script>
+</head>
+<body>
+	<b>--Iphone6---</b>
+	<select name="size" id="size">
+		<option value="16">16 GB</option>
+		<option value="32">32 GB</option>
+		<option value="64">64 GB</option>
+	</select>
+	<div id="price">
+		Gia la 5.000.000 VND
+	</div>
+</body>
+</html>
