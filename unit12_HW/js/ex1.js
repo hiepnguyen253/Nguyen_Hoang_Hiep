@@ -44,13 +44,6 @@ $(function () {
 			$('#errCheckBox').html('Vui lòng tích vào')
 		}
 	})
-	$('#check').on('change',function() { 
-		if ($('#check').prop('checked')) {
-			$('#errCheckBox').html('')
-		} else {
-			$('#errCheckBox').html('Vui lòng tích vào')
-		}
-	})
 
 })
 
